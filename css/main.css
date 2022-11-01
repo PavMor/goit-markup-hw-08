@@ -318,7 +318,7 @@ li {
 }
 
 @media screen and (max-width: 480px) {
-  .menu-container {
+  .header {
     position: relative;
   }
   .menu-button {
@@ -334,7 +334,6 @@ li {
     background-color: transparent;
   }
   .menu-container {
-    display: none;
     position: absolute;
     top: 100%;
     left: 0;
