@@ -3,21 +3,25 @@
   margin-right: auto;
   padding-top: 200px;
   padding-bottom: 200px;
-  max-width: 1600px;
-  min-height: 600px;
-  margin-right: auto;
-  margin-left: auto;
+  // max-width: 1600px;
+  // min-height: 600px;
 
   background: #2f303a;
-  background-image: linear-gradient(
-      to right,
-      rgba(47, 48, 58, 0.4),
-      rgba(47, 48, 58, 0.4)
-    ),
-    url(../images/hero-bg-img.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+
+  @media screen and (min-width: 480px) {
+    width: 480px;
+    height: 400px;
+    padding: 180px 60px;
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/hero-bg-img.jpg);
+  }
 }
 
 .hero {
