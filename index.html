@@ -17,48 +17,67 @@
   <body>
     <header class="header">
       <div class="container">
-        <nav class="nav">
-          <!-- Logo -->
-          <a href="./index.html" lang="en" class="logo">
-            <span class="logo-span">Web</span>Studio</a
+        <!-- Logo -->
+        <a href="./index.html" lang="en" class="logo">
+          <span class="logo-span">Web</span>Studio</a
+        >
+        <div class="menu-container is-open" id="menu-container" data-menu>
+          <button
+            type="button"
+            class="menu-button is-open"
+            aria-expanded="false"
+            data-menu-button
           >
-          <ul class="nav__list">
-            <li class="nav__item">
-              <a href="./index.html" class="link-nav current">Студія</a>
+            <svg width="40" height="40" area-label="Перемикач мобільного меню">
+              <use
+                class="icon-cross"
+                href="./images/symbol-defs.svg#icon-close"
+              ></use>
+              <use
+                class="icon-menu"
+                href="./images/symbol-defs.svg#icon-menu"
+              ></use>
+            </svg>
+          </button>
+          <nav class="nav">
+            <ul class="nav__list">
+              <li class="nav__item">
+                <a href="./index.html" class="link-nav current">Студія</a>
+              </li>
+              <li class="nav__item">
+                <a href="./portfolio.html" class="link-nav">Портфоліо</a>
+              </li>
+              <li class="nav__item">
+                <a href="./index.html" class="link-nav">Контакти</a>
+              </li>
+            </ul>
+          </nav>
+
+          <ul class="poc">
+            <li class="poc__item">
+              <a href="./index.html" class="poc__link"
+                ><svg class="icon-envelope">
+                  <use
+                    href="./images/symbol-defs.svg#icon-envelope"
+                    class="icon-envelope"
+                  ></use>
+                </svg>
+                info@devstudio.com</a
+              >
             </li>
-            <li class="nav__item">
-              <a href="./portfolio.html" class="link-nav">Портфоліо</a>
-            </li>
-            <li class="nav__item">
-              <a href="./index.html" class="link-nav">Контакти</a>
+            <li class="poc__item">
+              <a href="./index.html" class="poc__link"
+                ><svg class="icon-smartphone">
+                  <use
+                    href="./images/symbol-defs.svg#icon-smartphone"
+                    class="icon-smartphone"
+                  ></use>
+                </svg>
+                +38 096 111 11 11</a
+              >
             </li>
           </ul>
-        </nav>
-
-        <ul class="poc">
-          <li class="poc__item">
-            <a href="./index.html" class="poc__link"
-              ><svg class="icon-envelope">
-                <use
-                  href="./images/symbol-defs.svg#icon-envelope"
-                  class="icon-envelope"
-                ></use>
-              </svg>
-              info@devstudio.com</a
-            >
-          </li>
-          <li class="poc__item">
-            <a href="./index.html" class="poc__link"
-              ><svg class="icon-smartphone">
-                <use
-                  href="./images/symbol-defs.svg#icon-smartphone"
-                  class="icon-smartphone"
-                ></use>
-              </svg>
-              +38 096 111 11 11</a
-            >
-          </li>
-        </ul>
+        </div>
       </div>
     </header>
 
@@ -633,5 +652,6 @@
       </section>
     </footer>
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>

@@ -1,5 +1,11 @@
 body {
   font-family: Roboto, sans-serif;
+
+  @media screen and (max-width: 480px) {
+    &.modal-open {
+      overflow: hidden;
+    }
+  }
 }
 
 li {
@@ -17,7 +23,7 @@ li {
   padding-left: 15px;
   padding-right: 15px;
 
-  @media screen and (min-width: 480px) {
+  @media screen and (max-width: 480px) {
     width: 480px;
   }
 

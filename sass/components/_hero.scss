@@ -1,4 +1,5 @@
 .hero-container {
+  display: block;
   margin-left: auto;
   margin-right: auto;
   padding-top: 200px;
@@ -11,10 +12,13 @@
   background-size: cover;
   background-position: center;
 
-  @media screen and (min-width: 480px) {
+  @media screen and (max-width: 480px) {
     width: 480px;
     height: 400px;
-    padding: 180px 60px;
+    padding-top: 118px;
+    padding-right: 60px;
+    padding-bottom: 30px;
+    padding-left: 60px;
     background-image: linear-gradient(
         to right,
         rgba(47, 48, 58, 0.4),
@@ -38,6 +42,12 @@
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: #ffffff;
+
+    @media screen and (max-width: 480px) {
+      font-size: 26px;
+      line-height: 1.62;
+      text-align: center;
+    }
   }
 
   &__btn {
@@ -61,6 +71,11 @@
     background-color: $accent-color;
     cursor: pointer;
     @include transition-animation();
+
+    @media screen and (max-width: 480px) {
+      padding-left: 24px;
+      padding-right: 24px;
+    }
 
     &:hover,
     &:focus {
