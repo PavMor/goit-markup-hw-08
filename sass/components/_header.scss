@@ -3,7 +3,6 @@
   border-bottom: 1px solid #ececec;
 
   @media screen and (min-width: 480px) {
-    min-height: 60px;
     display: flex;
     align-items: center;
     justify-content: flex-end;
@@ -55,7 +54,7 @@
   left: 0;
   width: 100vw;
   height: 100vh;
-  padding: 32px;
+  padding-right: 40px;
   background-color: #fff;
   z-index: 999;
 
@@ -199,10 +198,4 @@
   height: 16px;
   margin-right: 10px;
   fill: currentColor;
-}
-
-.icon-close {
-}
-
-.icon-menu {
 }

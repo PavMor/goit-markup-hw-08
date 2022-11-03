@@ -253,6 +253,12 @@ li {
   padding-top: 94px;
   padding-bottom: 94px;
 }
+@media screen and (max-width: 480px) {
+  .section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
 
 .container {
   margin-left: auto;
@@ -260,7 +266,7 @@ li {
   padding-left: 15px;
   padding-right: 15px;
 }
-@media screen and (max-width: 480px) {
+@media screen and (min-width: 480px) {
   .container {
     width: 480px;
   }
@@ -294,7 +300,6 @@ li {
 }
 @media screen and (min-width: 480px) {
   .page-header {
-    min-height: 60px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -355,7 +360,7 @@ li {
   left: 0;
   width: 100vw;
   height: 100vh;
-  padding: 32px;
+  padding-right: 40px;
   background-color: #fff;
   z-index: 999;
   -webkit-transform: translateX(100%);
@@ -517,8 +522,6 @@ li {
   margin-right: auto;
   padding-top: 200px;
   padding-bottom: 200px;
-  margin-right: auto;
-  margin-left: auto;
   background: #2f303a;
   background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero-bg-img.jpg);
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-bg-img.jpg);
@@ -529,7 +532,6 @@ li {
 @media screen and (min-width: 480px) {
   .hero-container {
     width: 480px;
-    height: 400px;
   }
 }
 
@@ -999,13 +1001,12 @@ li {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-right: 30px;
 }
-@media screen and (max-width: 480px) {
+@media screen and (min-width: 480px) {
   .advantages__item {
     width: 450px;
-    margin-right: 0;
-    margin-left: 0;
+    margin-right: auto;
+    margin-left: auto;
   }
 }
 .advantages__item h3 {
@@ -1016,9 +1017,9 @@ li {
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: var(--secondary-text-color);
+  color: #212121;
 }
-@media screen and (max-width: 480px) {
+@media screen and (min-width: 480px) {
   .advantages__item h3 {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1029,11 +1030,21 @@ li {
   }
 }
 .advantages__item p {
-  margin: 0;
+  margin-bottom: 30px;
   font-size: 14px;
   line-height: 2;
   letter-spacing: 0.03em;
-  color: var(--primary-text-color);
+  color: #757575;
+}
+@media screen and (max-width: 480px) {
+  .advantages__item p {
+    line-height: 1.71;
+    margin-top: 0;
+    margin-bottom: 30px;
+  }
+  .advantages__item p:last-child {
+    margin-bottom: 0;
+  }
 }
 
 .antenna {
@@ -1055,6 +1066,7 @@ li {
 @media screen and (max-width: 480px) {
   .antenna {
     width: 450px;
+    margin-right: 0;
   }
 }
 
@@ -1082,6 +1094,7 @@ li {
 @media screen and (max-width: 480px) {
   .clock {
     width: 450px;
+    margin-right: 0;
   }
 }
 
@@ -1109,6 +1122,7 @@ li {
 @media screen and (max-width: 480px) {
   .diagram {
     width: 450px;
+    margin-right: 0;
   }
 }
 
@@ -1135,6 +1149,7 @@ li {
 @media screen and (max-width: 480px) {
   .astronaut {
     width: 450px;
+    margin-right: 0;
   }
 }
 
@@ -1146,16 +1161,17 @@ li {
 .projects-section {
   padding-bottom: 94px;
 }
+@media screen and (max-width: 480px) {
+  .projects-section {
+    display: none;
+  }
+}
 
 .projects-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
-  width: 1200px;
   background-color: #ffffff;
 }
 
@@ -1220,12 +1236,6 @@ li {
 }
 
 .team-cards-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   margin-left: auto;
   margin-right: auto;
 }
@@ -1245,13 +1255,6 @@ li {
   color: #212121;
 }
 .team-cards__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
   margin: 0;
   padding-left: 0;
 }
@@ -1387,6 +1390,15 @@ li {
   margin: 0;
   padding-left: 0;
   gap: 30px;
+}
+@media screen and (min-width: 480px) {
+  .partners-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
 }
 
 .icon-group {
