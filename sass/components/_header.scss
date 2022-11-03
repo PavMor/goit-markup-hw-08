@@ -4,6 +4,9 @@
 
   @media screen and (min-width: 480px) {
     min-height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
   }
 }
 
@@ -43,7 +46,7 @@
 
 .menu-toggle:hover,
 .menu-toggle:focus {
-  background-color: #2196f3;
+  background-color: #fff;
 }
 
 .menu-container {
@@ -75,6 +78,11 @@
   padding: 0;
   margin: 0;
   list-style: none;
+
+  @media screen and (min-width: 480px) {
+    display: none;
+    overflow: hidden;
+  }
 }
 
 .mobile-menu .link {
@@ -194,4 +202,7 @@
 }
 
 .icon-close {
+}
+
+.icon-menu {
 }
