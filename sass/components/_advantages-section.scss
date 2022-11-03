@@ -13,6 +13,11 @@
   align-items: center;
   margin-right: 30px;
   // width: 270px;
+  @media screen and (max-width: 480px) {
+    width: 450px;
+    margin-right: 0;
+    margin-left: 0;
+  }
 
   & h3 {
     margin-top: 0;
@@ -24,6 +29,11 @@
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--secondary-text-color);
+
+    @media screen and (max-width: 480px) {
+      display: flex;
+      justify-content: center;
+    }
   }
 
   & p {
@@ -41,10 +51,14 @@
   align-items: center;
   margin-bottom: 30px;
   margin-right: 30px;
-  width: 450px;
+  // width: 270px;
   height: 120px;
   border-radius: 4px;
   background-color: #f5f4fa;
+
+  @media screen and (max-width: 480px) {
+    width: 450px;
+  }
 }
 
 .icon-antenna {
@@ -58,10 +72,14 @@
   align-items: center;
   margin-bottom: 30px;
   margin-right: 30px;
-  width: 450px;
+  // width: 270px;
   height: 120px;
   border-radius: 4px;
   background-color: #f5f4fa;
+
+  @media screen and (max-width: 480px) {
+    width: 450px;
+  }
 }
 
 .icon-clock {
@@ -75,10 +93,14 @@
   align-items: center;
   margin-bottom: 30px;
   margin-right: 30px;
-  width: 450px;
+  // width: 270px;
   height: 120px;
   border-radius: 4px;
   background-color: #f5f4fa;
+
+  @media screen and (max-width: 480px) {
+    width: 450px;
+  }
 }
 
 .icon-diagram {
@@ -91,10 +113,14 @@
   justify-content: center;
   align-items: center;
   margin-bottom: 30px;
-  width: 450px;
+  // width: 270px;
   height: 120px;
   border-radius: 4px;
   background-color: #f5f4fa;
+
+  @media screen and (max-width: 480px) {
+    width: 450px;
+  }
 }
 
 .icon-astronaut {

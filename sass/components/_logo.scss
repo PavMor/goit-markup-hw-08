@@ -3,7 +3,7 @@
 }
 
 .logo {
-  // display: flex;
+  display: flex;
   margin-right: 93px;
   align-items: center;
   padding-top: 24px;
@@ -16,10 +16,4 @@
   line-height: 1.19;
   letter-spacing: 0.03em;
   text-decoration: none;
-
-  @media screen and (max-width: 480px) {
-    margin-top: 16px;
-    margin-bottom: 16px;
-    padding: 0;
-  }
 }

@@ -6,8 +6,8 @@
 }
 
 .bottom {
-  // display: flex;
-  // flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .logo-bottom-span {
@@ -15,7 +15,7 @@
 }
 
 .logo-bottom {
-  // display: flex;
+  display: flex;
   margin-bottom: 20px;
 
   font-family: "Raleway", sans-serif;
@@ -66,13 +66,13 @@
 }
 
 .links-footer {
-  // display: flex;
-  // flex-direction: column;
-  // margin-left: 70px;
-  // align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin-left: 70px;
+  align-items: center;
 
   & h3 {
-    // display: flex;
+    display: flex;
     margin-top: 12px;
     margin-bottom: 20px;
     align-self: start;
