@@ -2,6 +2,11 @@
   padding-top: 94px;
   padding-bottom: 94px;
   background-color: $secondary-bg-color;
+
+  @media screen and (max-width: 480px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
 }
 
 .team-cards-container {

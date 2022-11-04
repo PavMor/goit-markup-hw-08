@@ -360,7 +360,7 @@ li {
   left: 0;
   width: 100vw;
   height: 100vh;
-  padding-right: 40px;
+  padding-left: 40px;
   background-color: #fff;
   z-index: 999;
   -webkit-transform: translateX(100%);
@@ -378,8 +378,8 @@ li {
 
 .menu-container .menu-toggle {
   position: absolute;
-  top: 16px;
-  right: 16px;
+  top: 5px;
+  right: 6px;
   color: #212121;
 }
 
@@ -528,13 +528,10 @@ li {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  max-width: 100%;
+  display: block;
+  height: auto;
 }
-@media screen and (min-width: 480px) {
-  .hero-container {
-    width: 480px;
-  }
-}
-
 .hero {
   text-align: center;
 }
@@ -996,11 +993,17 @@ li {
 .advantages__list .advantages__item:last-child {
   margin-right: 0;
 }
+@media screen and (max-width: 480px) {
+  .advantages__list:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
 
 .advantages__item {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-bottom: 30px;
 }
 @media screen and (min-width: 480px) {
   .advantages__item {
@@ -1019,7 +1022,7 @@ li {
   text-transform: uppercase;
   color: #212121;
 }
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 480px) {
   .advantages__item h3 {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1027,10 +1030,12 @@ li {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 .advantages__item p {
-  margin-bottom: 30px;
   font-size: 14px;
   line-height: 2;
   letter-spacing: 0.03em;
@@ -1040,9 +1045,6 @@ li {
   .advantages__item p {
     line-height: 1.71;
     margin-top: 0;
-    margin-bottom: 30px;
-  }
-  .advantages__item p:last-child {
     margin-bottom: 0;
   }
 }
@@ -1234,6 +1236,12 @@ li {
   padding-bottom: 94px;
   background-color: #f5f4fa;
 }
+@media screen and (max-width: 480px) {
+  .cards-section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
 
 .team-cards-container {
   margin-left: auto;
@@ -1378,6 +1386,11 @@ li {
   letter-spacing: 0.03em;
   color: #212121;
 }
+@media screen and (max-width: 480px) {
+  .partners h2 {
+    margin-bottom: 30px;
+  }
+}
 
 .partners-list {
   display: -webkit-box;
@@ -1391,13 +1404,18 @@ li {
   padding-left: 0;
   gap: 30px;
 }
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 480px) {
   .partners-list {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 210px;
   }
 }
 
@@ -1459,6 +1477,11 @@ li {
   height: 60px;
 }
 
+@media screen and (max-width: 480px) {
+  .icon-group {
+    width: 210px;
+  }
+}
 .footer-section {
   padding-top: 60px;
   padding-bottom: 60px;
