@@ -3,9 +3,11 @@
   border-bottom: 1px solid #ececec;
 
   @media screen and (min-width: 480px) {
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: flex-end;
+    height: 60px;
   }
 }
 
@@ -37,15 +39,30 @@
   outline: none;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 480px) {
+  .logo {
+    position: relative;
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
   .menu-toggle {
-    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
   }
 }
 
 .menu-toggle:hover,
 .menu-toggle:focus {
   background-color: #fff;
+}
+
+@media screen and (max-width: 480px) {
+  .open-menu {
+    margin-top: 10px;
+    margin-right: 15px;
+    margin-bottom: 10px;
+  }
 }
 
 .menu-container {
@@ -68,8 +85,8 @@
 
 .menu-container .menu-toggle {
   position: absolute;
-  top: 5px;
-  right: 6px;
+  top: 14px;
+  right: 14px;
   color: #212121;
 }
 
