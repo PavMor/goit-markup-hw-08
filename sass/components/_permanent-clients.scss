@@ -24,13 +24,18 @@
   margin: 0;
   padding-left: 0;
   gap: 30px;
+  @media screen and (max-width: 480px) {
+    flex-wrap: wrap;
+  }
 }
 
-.partners-list__item {
-  display: flex;
-  flex-wrap: wrap;
-  // flex-direction: column;
-  width: calc((100% - 30px) / 2);
+@media screen and (max-width: 480px) {
+  .partners-list__item {
+    display: flex;
+    flex-wrap: wrap;
+    // flex-direction: column;
+    width: calc((100% - 30px) / 2);
+  }
 }
 
 .icon-group {
@@ -52,10 +57,6 @@
   &:focus {
     border-color: $accent-color;
     fill: $accent-color;
-  }
-
-  @media screen and (max-width: 480px) {
-    width: 210px;
   }
 }
 

@@ -1415,16 +1415,23 @@ li {
   padding-left: 0;
   gap: 30px;
 }
-
-.partners-list__item {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  width: calc((100% - 30px) / 2);
+@media screen and (max-width: 480px) {
+  .partners-list {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
 }
 
+@media screen and (max-width: 480px) {
+  .partners-list__item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: calc((100% - 30px) / 2);
+  }
+}
 .icon-group {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1451,11 +1458,6 @@ li {
 .icon-group:hover, .icon-group:focus {
   border-color: #2196f3;
   fill: #2196f3;
-}
-@media screen and (max-width: 480px) {
-  .icon-group {
-    width: 210px;
-  }
 }
 
 .icon-group-1 {
