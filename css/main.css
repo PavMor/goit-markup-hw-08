@@ -1267,9 +1267,13 @@ li {
   padding-left: 0;
 }
 .team-cards__list .team-cards__item {
-  margin-right: 30px;
   margin-top: 0;
-  margin-bottom: 0;
+}
+@media screen and (max-width: 480px) {
+  .team-cards__list .team-cards__item {
+    margin-bottom: 30px;
+    margin-right: 0;
+  }
 }
 .team-cards__item {
   width: 270px;
@@ -1281,6 +1285,13 @@ li {
 }
 .team-cards__item:last-child {
   margin-right: 0;
+}
+@media screen and (max-width: 480px) {
+  .team-cards__item {
+    width: 450px;
+    height: 622px;
+    margin-right: 0;
+  }
 }
 .team-cards__text {
   padding-top: 30px;
@@ -1404,19 +1415,14 @@ li {
   padding-left: 0;
   gap: 30px;
 }
-@media screen and (max-width: 480px) {
-  .partners-list {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    width: 210px;
-  }
+
+.partners-list__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: calc((100% - 30px) / 2);
 }
 
 .icon-group {
@@ -1429,7 +1435,7 @@ li {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 170px;
+  width: 100%;
   height: 92px;
   border: 1px solid #afb1b8;
   fill: #afb1b8;
@@ -1445,6 +1451,11 @@ li {
 .icon-group:hover, .icon-group:focus {
   border-color: #2196f3;
   fill: #2196f3;
+}
+@media screen and (max-width: 480px) {
+  .icon-group {
+    width: 210px;
+  }
 }
 
 .icon-group-1 {
@@ -1477,11 +1488,6 @@ li {
   height: 60px;
 }
 
-@media screen and (max-width: 480px) {
-  .icon-group {
-    width: 210px;
-  }
-}
 .footer-section {
   padding-top: 60px;
   padding-bottom: 60px;

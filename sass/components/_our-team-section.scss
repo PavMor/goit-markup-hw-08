@@ -38,9 +38,14 @@
     padding-left: 0;
 
     & .team-cards__item {
-      margin-right: 30px;
+      // margin-right: 30px;
       margin-top: 0;
-      margin-bottom: 0;
+      // margin-bottom: 0;
+
+      @media screen and (max-width: 480px) {
+        margin-bottom: 30px;
+        margin-right: 0;
+      }
     }
   }
 
@@ -53,6 +58,12 @@
     margin-bottom: 94px;
 
     &:last-child {
+      margin-right: 0;
+    }
+
+    @media screen and (max-width: 480px) {
+      width: 450px;
+      height: 622px;
       margin-right: 0;
     }
   }
