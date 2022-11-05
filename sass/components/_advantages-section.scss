@@ -5,20 +5,14 @@
   background-color: $header-bg-color;
 
   & .advantages__item:last-child {
-    margin-right: 0;
-  }
-
-  @media screen and (max-width: 480px) {
-    &:not(:last-child) {
-      margin-bottom: 30px;
-    }
+    margin-bottom: 0;
   }
 }
 
 .advantages__item {
   align-items: center;
   margin-bottom: 30px;
-  @media screen and (min-width: 480px) {
+  @media screen and (max-width: 480px) {
     width: 450px;
     margin-right: auto;
     margin-left: auto;
