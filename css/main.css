@@ -253,7 +253,7 @@ li {
   padding-top: 94px;
   padding-bottom: 94px;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 767px) {
   .section {
     padding-top: 60px;
     padding-bottom: 60px;
@@ -308,18 +308,9 @@ li {
 .page-header {
   border-bottom: 1px solid #ececec;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 767px) {
   .page-header {
     position: relative;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
     height: 60px;
   }
 }
@@ -332,6 +323,12 @@ li {
   background-color: #fff;
 }
 
+@media screen and (max-width: 767px) {
+  .menu .poc,
+.nav__list {
+    display: none;
+  }
+}
 .menu-toggle {
   min-height: 40px;
   min-width: 40px;
@@ -352,12 +349,11 @@ li {
   outline: none;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 767px) {
   .logo {
     position: relative;
     padding-bottom: 16px;
-    left: 0;
-    top: 29px;
+    height: 60px;
   }
   .menu-toggle {
     position: absolute;
@@ -370,14 +366,14 @@ li {
   background-color: #fff;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 767px) {
   .open-menu {
     margin-top: 10px;
     margin-right: 15px;
     margin-bottom: 10px;
   }
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 767px) {
   .menu-container {
     position: fixed;
     top: 0;
@@ -398,6 +394,7 @@ li {
 .menu-container.is-open {
   -webkit-transform: translateX(0);
           transform: translateX(0);
+  padding: 0;
 }
 
 .menu-container .menu-toggle {
@@ -411,11 +408,46 @@ li {
   margin: 0;
   list-style: none;
 }
-.mobile-menu .link {
-  display: block;
-  padding: 10px;
+@media screen and (max-width: 767px) {
+  .mobile-menu {
+    padding: 40px 48px;
+  }
+}
+
+.mobile-menu .mobile-link-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding: 0;
+  margin: 0;
   color: #fff;
   text-decoration: none;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.18;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: #212121;
+}
+
+.mobile-menu .mobile-link-nav.current::after {
+  display: none;
+}
+
+.mobile-menu .mobile-link-nav {
+  padding: 0;
+  margin: 0;
+}
+
+.mobile-menu .mobile-nav__item {
+  margin-bottom: 30px;
 }
 
 .nav {
@@ -579,7 +611,7 @@ li {
   text-transform: uppercase;
   color: #ffffff;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 767px) {
   .hero__title {
     font-size: 26px;
     line-height: 1.62;
@@ -1077,7 +1109,7 @@ li {
           align-items: center;
   margin-bottom: 30px;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 767px) {
   .advantages__item {
     width: 450px;
     margin-right: auto;
@@ -1094,7 +1126,7 @@ li {
   text-transform: uppercase;
   color: #212121;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 767px) {
   .advantages__item h3 {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1113,7 +1145,7 @@ li {
   letter-spacing: 0.03em;
   color: #757575;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 767px) {
   .advantages__item p {
     line-height: 1.71;
     margin-top: 0;
@@ -1137,7 +1169,7 @@ li {
   border-radius: 4px;
   background-color: #f5f4fa;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 767px) {
   .antenna {
     width: 450px;
     margin-right: 0;
@@ -1165,7 +1197,7 @@ li {
   border-radius: 4px;
   background-color: #f5f4fa;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 767px) {
   .clock {
     width: 450px;
     margin-right: 0;
@@ -1193,7 +1225,7 @@ li {
   border-radius: 4px;
   background-color: #f5f4fa;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 767px) {
   .diagram {
     width: 450px;
     margin-right: 0;
@@ -1220,7 +1252,7 @@ li {
   border-radius: 4px;
   background-color: #f5f4fa;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 767px) {
   .astronaut {
     width: 450px;
     margin-right: 0;
@@ -1235,7 +1267,7 @@ li {
 .projects-section {
   padding-bottom: 94px;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 1199px) {
   .projects-section {
     display: none;
   }
@@ -1323,7 +1355,7 @@ li {
   padding-bottom: 94px;
   background-color: #f5f4fa;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 767px) {
   .cards-section {
     padding-top: 60px;
     padding-bottom: 60px;
@@ -1371,7 +1403,7 @@ li {
 .team-cards__list .team-cards__item {
   margin-top: 0;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 767px) {
   .team-cards__list .team-cards__item {
     margin-bottom: 30px;
     margin-left: auto;
@@ -1389,7 +1421,7 @@ li {
 .team-cards__item:last-child {
   margin-bottom: 0;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 767px) {
   .team-cards__item {
     width: 450px;
     height: 622px;
@@ -1500,7 +1532,7 @@ li {
   letter-spacing: 0.03em;
   color: #212121;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 767px) {
   .partners h2 {
     margin-bottom: 30px;
   }
@@ -1518,14 +1550,14 @@ li {
   padding-left: 0;
   gap: 30px;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 767px) {
   .partners-list {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 767px) {
   .partners-list__item {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1763,7 +1795,6 @@ li {
 
 .input-subscribe {
   padding: 15px 16px;
-  width: 358px;
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));

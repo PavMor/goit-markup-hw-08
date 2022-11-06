@@ -2,11 +2,8 @@
   // display: flex;
   border-bottom: 1px solid #ececec;
 
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 767px) {
     position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
     height: 60px;
   }
 }
@@ -19,11 +16,11 @@
   background-color: #fff;
 }
 
-@media screen and (max-width: 480px) {
-  // .nav__list,
-  // .poc {
-  //   display: none;
-  // }
+@media screen and (max-width: 767px) {
+  .menu .poc,
+  .nav__list {
+    display: none;
+  }
 }
 
 .menu-toggle {
@@ -41,13 +38,11 @@
   outline: none;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 767px) {
   .logo {
     position: relative;
-    // padding-top: 16px;
     padding-bottom: 16px;
-    left: 0;
-    top: 29px;
+    height: 60px;
   }
   .menu-toggle {
     position: absolute;
@@ -61,7 +56,7 @@
   background-color: #fff;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 767px) {
   .open-menu {
     margin-top: 10px;
     margin-right: 15px;
@@ -69,7 +64,7 @@
   }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 767px) {
   .menu-container {
     position: fixed;
     top: 0;
@@ -87,6 +82,7 @@
 
 .menu-container.is-open {
   transform: translateX(0);
+  padding: 0;
 }
 
 .menu-container .menu-toggle {
@@ -101,17 +97,39 @@
   margin: 0;
   list-style: none;
 
-  @media screen and (max-width: 480px) {
-    // display: none;
-    // overflow: hidden;
+  @media screen and (max-width: 767px) {
+    padding: 40px 48px;
   }
 }
 
-.mobile-menu .link {
-  display: block;
-  padding: 10px;
+.mobile-menu .mobile-link-nav {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0;
+  margin: 0;
   color: #fff;
   text-decoration: none;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.18;
+  text-align: center;
+  letter-spacing: 0.02em;
+
+  color: $secondary-text-color;
+}
+
+.mobile-menu .mobile-link-nav.current::after {
+  display: none;
+}
+
+.mobile-menu .mobile-link-nav {
+  padding: 0;
+  margin: 0;
+}
+
+.mobile-menu .mobile-nav__item {
+  margin-bottom: 30px;
 }
 
 .nav {
