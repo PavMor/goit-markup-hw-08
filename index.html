@@ -17,21 +17,20 @@
   <body>
     <header class="page-header">
       <div class="container">
-        <button
-          type="button"
-          class="menu-toggle js-open-menu"
-          aria-expanded="false"
-          aria-controls="mobile-menu"
-        >
-          <svg class="icon-menu" width="40" height="40">
-            <use
-              class="icon-menu"
-              href="./images/symbol-defs.svg#icon-menu"
-            ></use>
-          </svg>
-        </button>
-
         <div class="menu">
+          <button
+            type="button"
+            class="menu-toggle js-open-menu"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+          >
+            <svg class="icon-menu" width="40" height="40">
+              <use
+                class="icon-menu"
+                href="./images/symbol-defs.svg#icon-menu"
+              ></use>
+            </svg>
+          </button>
           <nav class="nav">
             <!-- Logo -->
             <a href="./index.html" lang="en" class="logo">
@@ -79,7 +78,7 @@
 
       <div class="menu-container js-menu-container" id="mobile-menu">
         <button class="menu-toggle js-close-menu">
-          <svg width="40" height="40">
+          <svg class="menu-close-btn" width="40" height="40">
             <use
               class="icon-close-new"
               href="./images/symbol-defs.svg#icon-close-new"
@@ -106,27 +105,33 @@
 
           <ul class="mobile-poc">
             <li class="mobile-poc__item link">
-              <a href="./index.html" class="mobile-poc__link"
-                ><svg class="icon-envelope">
-                  <use
-                    href="./images/symbol-defs.svg#icon-envelope"
-                    class="icon-envelope"
-                  ></use>
-                </svg>
-                info@devstudio.com</a
-              >
-            </li>
-            <li class="mobile-poc__item link">
-              <a href="./index.html" class="mobile-poc__link"
-                ><svg class="icon-smartphone">
-                  <use
-                    href="./images/symbol-defs.svg#icon-smartphone"
-                    class="icon-smartphone"
-                  ></use>
-                </svg>
+              <a href="./index.html" class="mobile-poc__link-tel">
                 +38 096 111 11 11</a
               >
             </li>
+            <li class="mobile-poc__item link">
+              <a href="./index.html" class="mobile-poc__link-mail">
+                info@devstudio.com</a
+              >
+            </li>
+          </ul>
+          <ul class="mobile-menu__social-link">
+            <li>
+              <a class="social-link" href="#"
+                >Instagram<span class="bar">|</span></a
+              >
+            </li>
+            <li>
+              <a class="social-link" href="#"
+                >Twitter<span class="bar">|</span></a
+              >
+            </li>
+            <li>
+              <a class="social-link" href="#"
+                >Facebook<span class="bar">|</span></a
+              >
+            </li>
+            <li><a class="social-link" href="#">LinkedIn</a></li>
           </ul>
         </div>
       </div>

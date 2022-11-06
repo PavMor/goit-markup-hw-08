@@ -8,12 +8,14 @@
   }
 }
 
-.menu {
-  display: block;
-  padding: 0;
-  margin: 0;
-  list-style: none;
-  background-color: #fff;
+@media screen and (max-width: 767px) {
+  .menu {
+    display: block;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    background-color: #fff;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -23,19 +25,21 @@
   }
 }
 
-.menu-toggle {
-  min-height: 40px;
-  min-width: 40px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+@media screen and (max-width: 767px) {
+  .menu-toggle {
+    min-height: 40px;
+    min-width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
-  margin: 0;
-  padding: 0;
-  background-color: transparent;
-  cursor: pointer;
-  border: none;
-  outline: none;
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+    outline: none;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -51,9 +55,11 @@
   }
 }
 
-.menu-toggle:hover,
-.menu-toggle:focus {
-  background-color: #fff;
+@media screen and (max-width: 767px) {
+  .menu-toggle:hover,
+  .menu-toggle:focus {
+    background-color: #fff;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -80,56 +86,138 @@
   }
 }
 
-.menu-container.is-open {
-  transform: translateX(0);
-  padding: 0;
-}
-
-.menu-container .menu-toggle {
-  // position: absolute;
-  top: 14px;
-  right: 14px;
-  color: #212121;
-}
-
-.mobile-menu {
-  padding: 0;
-  margin: 0;
-  list-style: none;
-
-  @media screen and (max-width: 767px) {
-    padding: 40px 48px;
+@media screen and (max-width: 767px) {
+  .menu-container.is-open {
+    transform: translateX(0);
+    padding: 0;
   }
-}
 
-.mobile-menu .mobile-link-nav {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  padding: 0;
-  margin: 0;
-  color: #fff;
-  text-decoration: none;
-  font-weight: 500;
-  font-size: 40px;
-  line-height: 1.18;
-  text-align: center;
-  letter-spacing: 0.02em;
+  .menu-container .menu-toggle {
+    top: 14px;
+    right: 14px;
+    color: #212121;
+  }
 
-  color: $secondary-text-color;
-}
+  .mobile-menu {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    padding: 48px 40px;
+    width: 480px;
+    height: 796px;
+  }
 
-.mobile-menu .mobile-link-nav.current::after {
-  display: none;
-}
+  .mobile-nav__list {
+    margin: 0;
+    padding: 0;
+    padding-bottom: 306px;
+  }
 
-.mobile-menu .mobile-link-nav {
-  padding: 0;
-  margin: 0;
-}
+  .mobile-menu .mobile-link-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0;
+    margin: 0;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 1.18;
+    text-align: center;
+    letter-spacing: 0.02em;
 
-.mobile-menu .mobile-nav__item {
-  margin-bottom: 30px;
+    color: $secondary-text-color;
+  }
+
+  .mobile-menu .mobile-link-nav.current::after {
+    display: none;
+  }
+
+  .mobile-menu .mobile-link-nav {
+    padding: 0;
+    margin: 0;
+  }
+
+  .mobile-menu .mobile-nav__item {
+    margin-bottom: 32px;
+  }
+
+  .mobile-nav__item:last-child {
+    margin-bottom: 0;
+  }
+
+  .mobile-link-nav:hover,
+  .mobile-link-nav:focus {
+    color: $accent-color;
+  }
+  .mobile-poc {
+    margin: 0;
+    padding: 0;
+  }
+
+  .mobile-poc__item {
+    margin-bottom: 32px;
+  }
+
+  .mobile-poc__link-tel {
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 1.18;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    color: $primary-text-color;
+    @include transition-animation();
+  }
+
+  .mobile-poc__link-mail {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    color: $primary-text-color;
+    @include transition-animation();
+  }
+
+  .mobile-poc__link-tel:hover,
+  .mobile-poc__link-tel:focus {
+    color: $accent-color;
+  }
+
+  .mobile-poc__link-mail:hover,
+  .mobile-poc__link-mail:focus {
+    color: $accent-color;
+  }
+
+  .menu-toggle:hover,
+  .menu-toggle:focus {
+    fill: $accent-color;
+  }
+
+  .mobile-menu__social-link {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    margin-top: 64px;
+    padding: 0;
+  }
+
+  .social-link {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.22;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    color: $accent-color;
+    gap: 10px;
+  }
+
+  .bar {
+    margin-left: 10px;
+    margin-right: 10px;
+    color: rgba(33, 33, 33, 0.2);
+  }
 }
 
 .nav {
