@@ -18,24 +18,24 @@
     <header class="page-header">
       <div class="container">
         <div class="menu">
-          <button
-            type="button"
-            class="menu-toggle js-open-menu"
-            aria-expanded="false"
-            aria-controls="mobile-menu"
-          >
-            <svg class="icon-menu" width="40" height="40">
-              <use
-                class="icon-menu"
-                href="./images/symbol-defs.svg#icon-menu"
-              ></use>
-            </svg>
-          </button>
           <nav class="nav">
             <!-- Logo -->
             <a href="./index.html" lang="en" class="logo">
               <span class="logo-span">Web</span>Studio</a
             >
+            <button
+              type="button"
+              class="menu-toggle js-open-menu"
+              aria-expanded="false"
+              aria-controls="mobile-menu"
+            >
+              <svg class="icon-menu" width="40" height="40">
+                <use
+                  class="icon-menu"
+                  href="./images/symbol-defs.svg#icon-menu"
+                ></use>
+              </svg>
+            </button>
             <ul class="nav__list">
               <li class="nav__item">
                 <a href="./index.html" class="link-nav current">Студія</a>
@@ -305,10 +305,15 @@
               <li class="projects__item">
                 <img
                   class="project-image"
+                  srcset="
+                    ./images/desktop_apps_img@1x.jpg 1x,
+                    ./images/desktop_apps_img@2x.jpg 2x,
+                    ./images/desktop_apps_img@3x.jpg 3x
+                  "
                   src="./images/desktop-apps-dev.jpg"
                   alt="Десктопні застосунки"
                   width="370"
-                  height="294"
+                />
                 />
                 <div class="project-box">
                   <p class="project-text">Десктопні додатки</p>
@@ -317,10 +322,14 @@
               <li class="projects__item">
                 <img
                   class="project-image"
+                  srcset="
+                    ./images/mobile_apps_img@1x.jpg 1x,
+                    ./images/mobile_apps_img@2x.jpg 2x,
+                    ./images/mobile_apps_img@3x.jpg 3x
+                  "
                   src="./images/mobile-apps-dev.jpg"
                   alt="Мобільні застосунки"
                   width="370"
-                  height="294"
                 />
                 <div class="project-box">
                   <p class="project-text">Мобільні додатки</p>
@@ -329,10 +338,14 @@
               <li class="projects__item">
                 <img
                   class="project-image"
+                  srcset="
+                    ./images/designers_decisions_img@1x.jpg 1x,
+                    ./images/designers_decisions_img@2x.jpg 2x,
+                    ./images/designers_decisions_img@3x.jpg 3x
+                  "
                   src="./images/web-design.jpg"
                   alt="Дизайнерські рішення"
                   width="370"
-                  height="294"
                 />
                 <div class="project-box">
                   <p class="project-text">Дизайнерські рішення</p>
@@ -352,10 +365,14 @@
             <ul class="team-cards__list">
               <li class="team-cards__item">
                 <img
+                  class="team-cards__image"
+                  srcset="
+                    ./images/ihor_img@1x.jpg 1x,
+                    ./images/ihor_img@2x.jpg 2x,
+                    ./images/ihor_img@3x.jpg 3x
+                  "
                   src="./images/igor-demianenko.jpg"
                   alt="фото Ігоря Дем'яненко"
-                  width="270"
-                  height="260"
                 />
                 <div class="team-cards__text">
                   <h3>Ігор Дем'яненко</h3>
@@ -406,10 +423,14 @@
               </li>
               <li class="team-cards__item">
                 <img
+                  class="team-cards__image"
+                  srcset="
+                    ./images/olha_img@1x.jpg 1x,
+                    ./images/olha_img@2x.jpg 2x,
+                    ./images/olha_img@3x.jpg 3x
+                  "
                   src="./images/olga-repina.jpg"
                   alt="фото Ольги Рєпіної"
-                  width="270"
-                  height="260"
                 />
                 <div class="team-cards__text">
                   <h3>Ольга Рєпіна</h3>
@@ -460,10 +481,14 @@
               </li>
               <li class="team-cards__item">
                 <img
+                  class="team-cards__image"
+                  srcset="
+                    ./images/mykola_img@1x.jpg 1x,
+                    ./images/mykola_img@2x.jpg 2x,
+                    ./images/mykola_img@3x.jpg 3x
+                  "
                   src="./images/mykola-tarasov.jpg"
                   alt="фото Миколи Тарасова"
-                  width="270"
-                  height="260"
                 />
                 <div class="team-cards__text">
                   <h3>Микола Тарасов</h3>
@@ -514,10 +539,14 @@
               </li>
               <li class="team-cards__item">
                 <img
+                  class="team-cards__image"
+                  srcset="
+                    ./images/mykhailo_img@1x.jpg 1x,
+                    ./images/mykhailo_img@2x.jpg 2x,
+                    ./images/mykhailo_img@3x.jpg 3x
+                  "
                   src="./images/mykhaylo-yermakov.jpg"
                   alt="фото Михайла Єрмакова"
-                  width="270"
-                  height="260"
                 />
                 <div class="team-cards__text">
                   <h3>Михайло Єрмаков</h3>

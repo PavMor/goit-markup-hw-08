@@ -1,43 +1,56 @@
 .hero-container {
   margin-left: auto;
   margin-right: auto;
-  padding-top: 200px;
-  padding-bottom: 200px;
+  // padding-top: 200px;
+  // padding-bottom: 200px;
   // max-width: 1600px;
-  // min-height: 600px;
 
-  background: #2f303a;
-  background-image: linear-gradient(
-      to right,
-      rgba(47, 48, 58, 0.4),
-      rgba(47, 48, 58, 0.4)
-    ),
-    url(../images/hero-bg-img.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  max-width: 100%;
-  display: block;
-  height: auto;
+  .hero {
+    text-align: center;
+    background: #2f303a;
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/hero-bg-img.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    max-width: 100%;
+    display: block;
+    height: auto;
 
-  @media screen and (min-width: 480px) {
-    width: 480px;
-    padding: 118px 60px;
+    @media screen and (max-width: 767px) {
+      width: 480px;
+      height: 400px;
+      padding: 118px 60px;
+      margin-left: auto;
+      margin-right: auto;
+
+      @media (min-resolution: 1dppx) {
+        background-image: url(../images/mobile_header_img@1x.jpg);
+      }
+
+      @media (min-resolution: 2dppx) {
+        background-image: url(../images/mobile_header_img@2x.jpg);
+      }
+
+      @media (min-resolution: 3dppx) {
+        background-image: url(../images/mobile_header_img@3x.jpg);
+      }
+    }
+
+    @media screen and (max-width: 1199px) {
+      width: 768px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      width: 1200px;
+    }
   }
 
-  @media screen and (min-width: 768px) {
-    width: 768px;
-  }
-
-  @media screen and (min-width: 1200px) {
-    width: 1200px;
-  }
-}
-
-.hero {
-  text-align: center;
-
-  &__title {
+  .hero__title {
     margin-top: 0;
     margin-bottom: 30px;
     font-weight: 900;
@@ -54,7 +67,7 @@
     }
   }
 
-  &__btn {
+  .hero__btn {
     padding-top: 10px;
     padding-bottom: 10px;
     padding-left: 32px;
