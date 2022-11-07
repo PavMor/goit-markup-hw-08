@@ -80,6 +80,8 @@
     padding-left: 40px;
     background-color: #fff;
     z-index: 999;
+    transition: opacity 250ms $timing-function,
+      visibility 250ms $timing-function;
 
     transform: translateX(100%);
     transition: transform 250ms ease-in-out;
