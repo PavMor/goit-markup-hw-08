@@ -22,6 +22,11 @@
   border-top: 0;
   overflow: hidden;
 
+  @media screen and (max-width: 767px) {
+    width: 450px;
+    height: 404px;
+  }
+
   &:hover,
   &:focus {
     opacity: 1;
@@ -46,6 +51,11 @@
   display: flex;
   position: relative;
   overflow: hidden;
+
+  @media screen and (max-width: 767px) {
+    width: 450px;
+    height: 294px;
+  }
 
   &__item {
     display: block;
