@@ -799,8 +799,8 @@ li {
     width: 480px;
     height: 400px;
     padding: 118px 60px;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
+    max-width: 1600px;
   }
 }
 @media screen and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1), screen and (max-width: 767px) and (min-resolution: 1dppx) {
@@ -1701,6 +1701,7 @@ li {
     padding-right: 15px;
     margin-left: auto;
     margin-right: auto;
+    width: 768px;
   }
 }
 .team-cards {
@@ -1717,9 +1718,18 @@ li {
   letter-spacing: 0.03em;
   color: #212121;
 }
+@media screen and (max-width: 767px) {
+  .team-cards h2 {
+    margin-bottom: 30px;
+    font-size: 28px;
+    line-height: 1.18;
+  }
+}
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .team-cards h2 {
     margin-bottom: 30px;
+    font-size: 28px;
+    line-height: 1.18;
   }
 }
 .team-cards__list {
@@ -1904,6 +1914,15 @@ li {
 @media screen and (max-width: 767px) {
   .partners h2 {
     margin-bottom: 30px;
+    font-size: 28px;
+    line-height: 1.18;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .partners h2 {
+    font-size: 28px;
+    line-height: 1.18;
+    margin-bottom: 30px;
   }
 }
 
@@ -1925,6 +1944,13 @@ li {
         flex-wrap: wrap;
   }
 }
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .partners-list {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    gap: 0;
+  }
+}
 
 @media screen and (max-width: 767px) {
   .partners-list__item {
@@ -1934,6 +1960,21 @@ li {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     width: calc((100% - 30px) / 2);
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .partners-list__item {
+    margin: 15px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: calc((100% - 90px) / 3);
   }
 }
 .icon-group {
@@ -1958,6 +1999,12 @@ li {
           transition-duration: 250ms;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .icon-group {
+    font-size: 28px;
+    line-height: 1.18;
+  }
 }
 .icon-group:hover, .icon-group:focus {
   border-color: #2196f3;

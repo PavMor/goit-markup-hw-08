@@ -25,8 +25,8 @@
       width: 480px;
       height: 400px;
       padding: 118px 60px;
-      margin-left: auto;
-      margin-right: auto;
+      margin: 0 auto;
+      max-width: 1600px;
 
       @media (min-resolution: 1dppx) {
         background-image: url(../images/mobile_header_img@1x.jpg);
