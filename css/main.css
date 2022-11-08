@@ -1733,8 +1733,6 @@ li {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    margin-right: auto;
-    margin-left: auto;
   }
 }
 .team-cards__list .team-cards__item {
