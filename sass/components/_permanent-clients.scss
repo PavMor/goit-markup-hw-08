@@ -65,6 +65,15 @@
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .partners-list__item {
+    display: flex;
+    flex-direction: row;
+    width: 170px;
+    height: 92px;
+  }
+}
+
 .icon-group {
   display: flex;
   justify-content: center;

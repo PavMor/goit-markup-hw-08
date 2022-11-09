@@ -2174,6 +2174,19 @@ li {
     margin-bottom: 0;
   }
 }
+@media screen and (min-width: 1200px) {
+  .partners-list__item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    width: 170px;
+    height: 92px;
+  }
+}
 .icon-group {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2256,6 +2269,11 @@ li {
   padding-left: 61px;
   padding-right: 74px;
 }
+@media screen and (min-width: 1200px) {
+  .footer-grouping {
+    padding: 0;
+  }
+}
 
 .bottom {
   display: -webkit-box;
@@ -2270,6 +2288,11 @@ li {
   .bottom {
     text-align: center;
     margin-right: auto;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .bottom {
+    margin-right: 70px;
   }
 }
 
@@ -2397,6 +2420,12 @@ li {
     margin-top: 0;
   }
 }
+@media screen and (min-width: 1200px) {
+  .links-footer {
+    margin-left: 0;
+    margin-right: 93px;
+  }
+}
 .links-footer h3 {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2425,6 +2454,11 @@ li {
     margin-top: 0;
     -ms-flex-item-align: center;
         align-self: center;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .links-footer h3 {
+    margin-top: 0;
   }
 }
 
@@ -2495,6 +2529,11 @@ li {
     margin-left: 0;
   }
 }
+@media screen and (min-width: 1200px) {
+  .form-subscribe {
+    margin-left: 0;
+  }
+}
 
 .label-subscribe {
   margin-top: 12px;
@@ -2519,6 +2558,11 @@ li {
   .label-subscribe {
     margin-top: 0;
     text-align: center;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .label-subscribe {
+    margin-top: 0;
   }
 }
 
@@ -2555,6 +2599,13 @@ li {
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .input-subscribe {
     width: 450px;
+    height: 50px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .input-subscribe {
+    margin-right: 12px;
+    width: 358px;
     height: 50px;
   }
 }
@@ -2613,6 +2664,14 @@ li {
     margin-top: 20px;
     margin-right: auto;
     margin-left: auto;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .btn-subscribe {
+    margin: 0;
+    margin-top: 36px;
+    margin-right: 0;
+    padding: 0;
   }
 }
 
