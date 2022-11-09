@@ -59,6 +59,10 @@
     flex-direction: column;
     width: calc((100% - 90px) / 3);
   }
+
+  .partners-list__item:nth-child(n + 4) {
+    margin-bottom: 0;
+  }
 }
 
 .icon-group {

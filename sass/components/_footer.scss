@@ -1,13 +1,25 @@
 .footer-section {
-  // display: flex;
   padding-top: 60px;
   padding-bottom: 60px;
   background-color: #2f303a;
 }
 
+.footer-grouping {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-left: 61px;
+  padding-right: 74px;
+}
+
 .bottom {
   display: flex;
   flex-direction: column;
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    text-align: center;
+    margin-right: auto;
+  }
 }
 
 .logo-bottom-span {
@@ -26,6 +38,10 @@
   text-decoration: none;
 
   @media screen and (max-width: 767px) {
+    justify-content: center;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
     justify-content: center;
   }
 }
@@ -99,6 +115,10 @@
     margin-right: auto;
   }
 
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin-top: 0;
+  }
+
   & h3 {
     display: flex;
     margin-top: 12px;
@@ -116,6 +136,11 @@
       margin-right: auto;
       margin-left: auto;
       margin-top: 0;
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      margin-top: 0;
+      align-self: center;
     }
   }
 }
@@ -161,6 +186,11 @@
   @media screen and (max-width: 767px) {
     margin-left: 0;
   }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin-top: 60px;
+    margin-left: 0;
+  }
 }
 
 .label-subscribe {
@@ -179,6 +209,11 @@
     margin-top: 0;
     margin-left: auto;
     margin-right: auto;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin-top: 0;
+    text-align: center;
   }
 }
 
@@ -206,6 +241,11 @@
     margin-right: auto;
     margin-left: auto;
     margin-bottom: 20px;
+    width: 450px;
+    height: 50px;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
     width: 450px;
     height: 50px;
   }
@@ -248,6 +288,12 @@
     color: #ffffff;
     background-color: $accent-color;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin-top: 20px;
+    margin-right: auto;
+    margin-left: auto;
   }
 }
 
