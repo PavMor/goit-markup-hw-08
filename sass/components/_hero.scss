@@ -1,9 +1,6 @@
 .hero-container {
   margin-left: auto;
   margin-right: auto;
-  // padding-top: 200px;
-  // padding-bottom: 200px;
-  // max-width: 1600px;
 
   .hero {
     text-align: center;
@@ -62,7 +59,24 @@
     }
 
     @media screen and (min-width: 1200px) {
-      width: 1200px;
+      padding-top: 200px;
+      padding-bottom: 200px;
+      max-width: 1600px;
+      min-height: 600px;
+      margin-right: auto;
+      margin-left: auto;
+
+      @media (min-resolution: 1dppx) {
+        background-image: url(../images/desktop_hero_img@1x.jpg);
+      }
+
+      @media (min-resolution: 2dppx) {
+        background-image: url(../images/desktop_hero_img@2x.jpg);
+      }
+
+      @media (min-resolution: 3dppx) {
+        background-image: url(../images/desktop_hero_img@3x.jpg);
+      }
     }
   }
 

@@ -1,5 +1,4 @@
 .advantages__list {
-  // display: flex;
   margin: 0;
   padding: 0;
   background-color: $header-bg-color;
@@ -12,6 +11,11 @@
     display: flex;
     flex-wrap: wrap;
   }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    flex-direction: row;
+  }
 }
 
 .advantages__item {
@@ -22,6 +26,10 @@
     width: 450px;
     margin-right: auto;
     margin-left: auto;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 0;
   }
 
   & h3 {
@@ -48,6 +56,10 @@
       width: 354px;
       margin-bottom: 0;
     }
+
+    @media screen and (min-width: 1200px) {
+      width: 270px;
+    }
   }
 
   & p {
@@ -66,6 +78,11 @@
       width: 354px;
       margin-top: 10px;
       margin-bottom: 0;
+    }
+
+    @media screen and (min-width: 1200px) {
+      margin-bottom: 0;
+      width: 270px;
     }
   }
 }
@@ -95,6 +112,11 @@
     width: 354px;
     height: 120px;
   }
+
+  @media screen and (min-width: 1200px) {
+    width: 270px;
+    height: 120px;
+  }
 }
 
 .icon-antenna {
@@ -122,6 +144,11 @@
     height: 120px;
     margin-right: 0;
   }
+
+  @media screen and (min-width: 1200px) {
+    width: 270px;
+    height: 120px;
+  }
 }
 
 .icon-clock {
@@ -148,6 +175,11 @@
     width: 354px;
     height: 120px;
   }
+
+  @media screen and (min-width: 1200px) {
+    width: 270px;
+    height: 120px;
+  }
 }
 
 .icon-diagram {
@@ -171,6 +203,11 @@
 
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     width: 354px;
+    height: 120px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 270px;
     height: 120px;
   }
 }

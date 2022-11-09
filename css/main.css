@@ -326,10 +326,25 @@ li {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    width: 1200px;
+    margin-right: auto;
+    margin-left: auto;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
     margin: 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
   }
 }
 @media screen and (max-width: 767px) {
@@ -342,6 +357,18 @@ li {
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
+  .menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    height: 80px;
+  }
+}
+@media screen and (min-width: 1200px) {
   .menu {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -381,6 +408,11 @@ li {
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
+  .menu-toggle {
+    display: none;
+  }
+}
+@media screen and (min-width: 1200px) {
   .menu-toggle {
     display: none;
   }
@@ -430,6 +462,11 @@ li {
     display: none;
   }
 }
+@media screen and (min-width: 1200px) {
+  .open-menu {
+    display: none;
+  }
+}
 @media screen and (max-width: 767px) {
   .menu-container {
     position: fixed;
@@ -451,6 +488,11 @@ li {
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
+  .menu-container {
+    display: none;
+  }
+}
+@media screen and (min-width: 1200px) {
   .menu-container {
     display: none;
   }
@@ -638,6 +680,17 @@ li {
   margin-right: 0;
 }
 
+@media screen and (min-width: 1200px) {
+  .nav__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
 .link-nav.current {
   color: #2196f3;
   -webkit-transform: scale(1);
@@ -712,12 +765,32 @@ li {
     padding-bottom: 21px;
   }
 }
+@media screen and (min-width: 1200px) {
+  .poc {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    margin-left: 310px;
+  }
+}
 .poc__item {
   margin-right: 30px;
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .poc__item {
     padding-bottom: 10px;
+    margin-right: 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .poc__item:last-child {
     margin-right: 0;
   }
 }
@@ -844,7 +917,27 @@ li {
 }
 @media screen and (min-width: 1200px) {
   .hero-container .hero {
-    width: 1200px;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    max-width: 1600px;
+    min-height: 600px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+@media screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 1), screen and (min-width: 1200px) and (min-resolution: 1dppx) {
+  .hero-container .hero {
+    background-image: url(../images/desktop_hero_img@1x.jpg);
+  }
+}
+@media screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .hero-container .hero {
+    background-image: url(../images/desktop_hero_img@2x.jpg);
+  }
+}
+@media screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 3), screen and (min-width: 1200px) and (min-resolution: 3dppx) {
+  .hero-container .hero {
+    background-image: url(../images/desktop_hero_img@3x.jpg);
   }
 }
 .hero-container .hero__title {
@@ -1365,6 +1458,17 @@ li {
         flex-wrap: wrap;
   }
 }
+@media screen and (min-width: 1200px) {
+  .advantages__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
 
 .advantages__item {
   -webkit-box-align: center;
@@ -1377,6 +1481,11 @@ li {
     width: 450px;
     margin-right: auto;
     margin-left: auto;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .advantages__item {
+    margin-bottom: 0;
   }
 }
 .advantages__item h3 {
@@ -1417,6 +1526,11 @@ li {
     margin-bottom: 0;
   }
 }
+@media screen and (min-width: 1200px) {
+  .advantages__item h3 {
+    width: 270px;
+  }
+}
 .advantages__item p {
   font-size: 14px;
   line-height: 2;
@@ -1435,6 +1549,12 @@ li {
     width: 354px;
     margin-top: 10px;
     margin-bottom: 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .advantages__item p {
+    margin-bottom: 0;
+    width: 270px;
   }
 }
 
@@ -1468,6 +1588,12 @@ li {
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .antenna {
     width: 354px;
+    height: 120px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .antenna {
+    width: 270px;
     height: 120px;
   }
 }
@@ -1506,6 +1632,12 @@ li {
     margin-right: 0;
   }
 }
+@media screen and (min-width: 1200px) {
+  .clock {
+    width: 270px;
+    height: 120px;
+  }
+}
 
 .icon-clock {
   width: 70px;
@@ -1540,6 +1672,12 @@ li {
     height: 120px;
   }
 }
+@media screen and (min-width: 1200px) {
+  .diagram {
+    width: 270px;
+    height: 120px;
+  }
+}
 
 .icon-diagram {
   width: 70px;
@@ -1570,6 +1708,12 @@ li {
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .astronaut {
     width: 354px;
+    height: 120px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .astronaut {
+    width: 270px;
     height: 120px;
   }
 }
@@ -1682,6 +1826,12 @@ li {
     padding-bottom: 60px;
   }
 }
+@media screen and (min-width: 1200px) {
+  .cards-section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
 
 .team-cards-container {
   margin-left: auto;
@@ -1691,19 +1841,23 @@ li {
   .team-cards-container {
     padding-left: 15px;
     padding-right: 15px;
-    margin-left: auto;
-    margin-right: auto;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .team-cards-container {
     padding-left: 15px;
     padding-right: 15px;
-    margin-left: auto;
-    margin-right: auto;
     width: 768px;
   }
 }
+@media screen and (min-width: 1200px) {
+  .team-cards-container {
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 1200px;
+  }
+}
+
 .team-cards {
   margin-top: 0;
   margin-left: 0;
@@ -1745,6 +1899,22 @@ li {
         flex-wrap: wrap;
   }
 }
+@media screen and (min-width: 1200px) {
+  .team-cards__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 30px;
+    margin-bottom: 0;
+  }
+}
 .team-cards__list .team-cards__item {
   margin-top: 0;
 }
@@ -1763,6 +1933,17 @@ li {
   border-radius: 0px 0px 4px 4px;
   margin-bottom: 94px;
 }
+@media screen and (max-width: 767px) {
+  .team-cards__item {
+    width: 450px;
+    height: 622px;
+    margin-right: 0;
+    margin-bottom: 0;
+  }
+  .team-cards__item:last-child {
+    margin-bottom: 0;
+  }
+}
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .team-cards__item {
     width: 354px;
@@ -1770,21 +1951,34 @@ li {
     margin-right: 30px;
     margin-bottom: 30px;
   }
+  .team-cards__item:last-child {
+    margin-bottom: 0;
+  }
 }
-.team-cards__item:last-child {
-  margin-bottom: 0;
+@media screen and (min-width: 1200px) {
+  .team-cards__item {
+    width: 270px;
+    height: 428px;
+    margin-bottom: 0;
+  }
 }
 @media screen and (max-width: 767px) {
-  .team-cards__item {
+  .team-cards__item .team-cards__image {
     width: 450px;
-    height: 622px;
+    height: 460px;
     margin-right: 0;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
-  .team-cards .team-cards__image {
+  .team-cards__item .team-cards__image {
     width: 354px;
     height: 374px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .team-cards__item .team-cards__image {
+    width: 270px;
+    height: 260px;
   }
 }
 .team-cards__text {
