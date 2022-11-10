@@ -19,11 +19,10 @@
     height: auto;
 
     @media screen and (max-width: 767px) {
-      width: 480px;
       height: 400px;
       padding: 118px 60px;
       margin: 0 auto;
-      max-width: 1600px;
+      max-width: 767px;
 
       @media (min-resolution: 1dppx) {
         background-image: url(../images/mobile_header_img@1x.jpg);

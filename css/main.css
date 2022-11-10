@@ -502,6 +502,7 @@ li {
     -webkit-transform: translateX(0);
             transform: translateX(0);
     padding: 0;
+    overflow-y: scroll;
   }
   .menu-container .menu-toggle {
     top: 14px;
@@ -869,11 +870,10 @@ li {
 }
 @media screen and (max-width: 767px) {
   .hero-container .hero {
-    width: 480px;
     height: 400px;
     padding: 118px 60px;
     margin: 0 auto;
-    max-width: 1600px;
+    max-width: 767px;
   }
 }
 @media screen and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1), screen and (max-width: 767px) and (min-resolution: 1dppx) {
