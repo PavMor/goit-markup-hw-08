@@ -83,6 +83,11 @@
     height: 294px;
   }
 
+  @media screen and (min-width: 1200px) {
+    width: 370px;
+    height: 294px;
+  }
+
   &__item {
     display: block;
     max-width: 100%;
@@ -101,6 +106,18 @@
   transition: transform 250ms $timing-function, opacity 250ms $timing-function;
   opacity: 0;
 
+  @media screen and (max-width: 767px) {
+    width: 450px;
+    padding: 0;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 370px;
+    height: 294px;
+    top: 0;
+    right: 0;
+  }
+
   &__item {
     display: flex;
     position: absolute;
@@ -113,6 +130,21 @@
     color: #ffffff;
     width: 322px;
     height: 0;
+
+    @media screen and (max-width: 767px) {
+      width: 402px;
+      top: 74px;
+      right: 16px;
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      right: 5px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      top: 60px;
+      right: 16px;
+    }
   }
 }
 
